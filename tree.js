@@ -10,8 +10,6 @@ var angle = 35;
 var setupComplete = false;
 var alignSlider, cohesionSlider, seperationSlider, maxForceSlider, angleSlider, homingSlider;
 
-  
-
 
 function addStars(numStars){
     if (stars.length < 500) {
@@ -30,6 +28,7 @@ function addBoids(numBoids){
     } 
 }
 
+
 var canv;
 
 function setup() {
@@ -40,6 +39,7 @@ function setup() {
     homingSlider = document.getElementById("homing"); 
     angleSlider = document.getElementById("angle"); 
     canv = createCanvas(600, 600);
+
 
     var a = createVector(width/2, height);
     var b = createVector(width/2, height - 100);
