@@ -220,6 +220,7 @@ function drawSpheres() {
         console.log(xPos, yPos);
     }
     push();
+    rotate(angleZ);
     translate(xPos, yPos, 0);
     sphere(10);
     pop();
@@ -230,6 +231,7 @@ function drawSpheres() {
         console.log(xPos, yPos);
     }
     push();
+    rotate(angleZ);
     translate(xPos, yPos, 0);
     sphere(10);
     pop();
