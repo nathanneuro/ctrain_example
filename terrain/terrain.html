@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>terrain.js</title>
+    <style> body {padding: 0; margin: 0;} </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js">
+    </script>
+
+
+
+    <script language="javascript" type="text/javascript" src="terrain.js">
+    </script>
+
+
+<style>
+div {
+    text-align: left;
+}
+body {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+
+}
+.intro {
+    display: inline-block;
+}
+
+/* .sliderDiv {
+    display: inline-block;
+} */
+</style>
+</head>
+<body>
+        <div class='intro'><p>Terrain explorations</p>
+
+        </div>    
+<div>
+        
+<div class="sliderDiv">
+    
+    <input type="checkbox" id="runDraw" checked> run
+
+    <input id="rotX" type="range" min="0" max="0.8" step="0.005"  value="0.0"></input> rot x
+    <output id="rotXVal">0.0</output>
+    
+    
+    <input id="rotY" type="range" min="0" max="0.8" step="0.005"  value="0.0"></input> rot y
+    <output id="rotYVal">0.0</output>
+
+        
+    <input id="rotZ" type="range" min="0" max="0.8" step="0.005"  value="0.05"></input> rot z
+    <output id="rotZVal">0.05</output>
+
+
+    <input id="translateZ" type="range" min="-100" max="100" step="5"  value="0"></input> translate z
+    <output id="translateZVal">0</output>
+
+
+    <input id="noiseFactor" type="range" min="1" max="70" step="1"  value="10"></input> noise intensity factor
+    <output id="noiseFactorVal">10</output>
+
+    <input id="noiseStep" type="range" min="0.018" max="0.25" step="0.002"  value="0.1"></input> noise space step size
+    <output id="noiseStepVal">0.1</output>
+    
+    </div>
+
+
+</div>
+</body>
+</html>
