@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diffusion.js</title>
+    <style> body {padding: 0; margin: 0;} </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js">
+    </script>
+
+    <script language="javascript" type="text/javascript" src="diffusion.js">
+    </script>
+
+
+<style>
+div {
+    text-align: left;
+}
+body {
+    text-align: center;
+    color: blanchedalmond;
+    margin: auto;
+    padding: 10px;
+    background-color:darkslategray;
+
+}
+.intro {
+    display: inline-block;
+}
+
+/* .sliderDiv {
+    display: inline-block;
+} */
+</style>
+</head>
+<body>
+        <div class='intro'><p>Diffusion explorations</p>
+
+        </div>
+<div>
+
+<input type="checkbox" id="runDraw" checked> run
+
+<div class="sliderDiv">
+    <p>
+    <input id="diffA" type="range" min="0" max="1.0" step="0.05"  value="1.0"></input> diff A
+    <output id="diffAVal">1.0</output>
+    </p>
+</div>
+
+<div class="sliderDiv">
+    <p>
+        <input id="diffB" type="range" min="0" max="1.0" step="0.05"  value="0.5"></input> diff B
+        <output id="diffBVal">0.5</output>
+    </p>
+</div>
+
+<div class="sliderDiv">
+        <p>
+            <input id="diffC" type="range" min="0" max="1.0" step="0.05"  value="0.5"></input> diff C
+            <output id="diffCVal">0.5</output>
+        </p>
+    </div>
+
+    <div class="sliderDiv">
+            <p>
+                <input id="feed" type="range" min="0.0" max="0.3" step="0.005"  value="0.055"></input> feed A
+                <output id="feedVal">0.055</output>
+            </p>
+    </div>
+    <div class="sliderDiv">
+        <p>
+            <input id="removeB" type="range" min="0" max="0.08" step="0.001"  value="0.062"></input> remove B rate
+            <output id="removeBval">0.062</output>
+        </p>
+</div>
+    <div class="sliderDiv">
+            <p>
+                <input id="removeC" type="range" min="0" max="0.08" step="0.001"  value="0.062"></input> remove C rate
+                <output id="removeCval">0.062</output>
+            </p>
+    </div>
+
+
+</div>
+</body>
+</html>
